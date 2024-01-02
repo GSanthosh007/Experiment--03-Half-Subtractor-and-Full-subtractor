@@ -18,12 +18,10 @@ The half-subtractor is a combinational circuit which is used to perform subtract
 Sum = X'Y+XY' = X ⊕ Y
 Carry=X'Y
 ## Program:
-module HalfSubstractor (a,b,diff,borrow);
-input a,b;
-output diff,borrow;
-xor (diff,a,b);
-and (borrow,~a,b);
-endmodule
+![Screenshot 2024-01-02 133054](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/8467ea7f-c38f-4d2e-b51e-6a4c733b33c9)
+
+
+
 ## Tabletable
 ![Screenshot 2024-01-02 131150](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/79a00328-e46f-4a6f-9fbe-c4f8e3a99766)
 ## RTL
@@ -42,12 +40,8 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 ## Procedure
 Write the detailed procedure here 
 ## Program:
-/*module FullSubstractor(a,b,c,diff,borrow);
-input a,b,c;
-output diff,borrow;
-xor(diff,a,b,c);
-assign borrow=~a&b|c&~(a^b);
-endmodule
+![Screenshot 2024-01-02 133147](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/9bd60a05-6300-44b9-a8d8-7c9a15d10e77)
+
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
 Developed by: SANTHOSH G
 RegisterNumber:  212223240152
@@ -63,7 +57,7 @@ RegisterNumber:  212223240152
 
 
 ## Timing diagram 
-![Screenshot 2024-01-02 132121](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/6ffa7415-307b-41e4-bb41-7761a6868efa)
+![Screenshot 2024-01-02 133231](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/d0783e50-4543-4529-bd24-84c6692458c4)
 
 ## Result:!
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
