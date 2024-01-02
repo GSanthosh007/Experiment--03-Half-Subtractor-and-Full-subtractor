@@ -17,6 +17,20 @@ The half-subtractor is a combinational circuit which is used to perform subtract
 
 Sum = X'Y+XY' = X ⊕ Y
 Carry=X'Y
+## Program:
+module HalfSubstractor (a,b,diff,borrow);
+input a,b;
+output diff,borrow;
+xor (diff,a,b);
+and (borrow,~a,b);
+endmodule
+## Tabletable
+![Screenshot 2024-01-02 131150](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/79a00328-e46f-4a6f-9fbe-c4f8e3a99766)
+## RTL
+![Screenshot 2024-01-02 131415](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/48a35016-fde6-46a0-8044-6ba96593fc6a)
+## Timing Diagram
+![Screenshot 2024-01-02 131508](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/5f9ecd22-de90-4660-b1e5-c753a425cef4)
+
 
 ## Full Subtractor
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow. 
@@ -26,29 +40,30 @@ A full subtractor is a combinational circuit that performs subtraction involving
 Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
-
-
-
 Write the detailed procedure here 
-
-
 ## Program:
-/*
+/*module FullSubstractor(a,b,c,diff,borrow);
+input a,b,c;
+output diff,borrow;
+xor(diff,a,b,c);
+assign borrow=~a&b|c&~(a^b);
+endmodule
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHOSH G
+RegisterNumber:  212223240152
 */
-
-## Output:
-
 ## Truthtable
+![Screenshot 2024-01-02 131917](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/68a34d85-f1e5-4f0d-965f-517f089ec3a6)
+
 
 
 
 ##  RTL realization
+[Screenshot 2024-01-02 132035](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/215df764-a912-43fe-b4b5-23d1bb7ccde2)
 
 
 ## Timing diagram 
+![Screenshot 2024-01-02 132121](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/6ffa7415-307b-41e4-bb41-7761a6868efa)
 
-## Result:
+## Result:!
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
