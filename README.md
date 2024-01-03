@@ -17,18 +17,6 @@ The half-subtractor is a combinational circuit which is used to perform subtract
 
 Sum = X'Y+XY' = X ⊕ Y
 Carry=X'Y
-## Program:
-![Screenshot 2024-01-02 133054](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/8467ea7f-c38f-4d2e-b51e-6a4c733b33c9)
-
-
-
-## Tabletable
-![Screenshot 2024-01-02 131150](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/79a00328-e46f-4a6f-9fbe-c4f8e3a99766)
-## RTL
-![Screenshot 2024-01-02 131415](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/48a35016-fde6-46a0-8044-6ba96593fc6a)
-## Timing Diagram
-![Screenshot 2024-01-02 131508](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/5f9ecd22-de90-4660-b1e5-c753a425cef4)
-
 
 ## Full Subtractor
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow. 
@@ -40,24 +28,36 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 ## Procedure
 Write the detailed procedure here 
 ## Program:
-![Screenshot 2024-01-02 133147](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/9bd60a05-6300-44b9-a8d8-7c9a15d10e77)
 
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
 Developed by: SANTHOSH G
-RegisterNumber:  212223240152
-*/
-## Truthtable
-![Screenshot 2024-01-02 131917](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/68a34d85-f1e5-4f0d-965f-517f089ec3a6)
+RegisterNumber:  2122232401
+HALF SUBRACTOR:
+![Screenshot 2024-01-03 063108](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/49b82ef8-61ee-4497-a5ed-e4da0d1396b3)
 
+FULL SUBRACTOR:
+![Screenshot 2024-01-03 063137](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/a99068c8-310f-4a2a-9029-88d222b24290)
 
+TRUTH TABLE:
+HALF SUBRACTOR:
+![Screenshot 2024-01-03 063202](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/6b7c4ade-139d-4bbd-b547-925885a3f6a5)
+FULL SUBRACTOR:
+![Screenshot 2024-01-03 063303](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/4e6cbd1a-8564-4c61-9356-4ec8341fbad8)
 
+##  RTL DIAGRAM 
+HALF SUBRACTOR:
+![Screenshot 2024-01-03 063352](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/5b43fd38-e3fb-41cf-a3e9-5aaf5ec52409)
 
-##  RTL realization
-[Screenshot 2024-01-02 132035](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/215df764-a912-43fe-b4b5-23d1bb7ccde2)
+FULL SUBRACTOR:
+![Screenshot 2024-01-03 063417](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/f472bdd5-1fb0-4c52-959b-490f2cfe8d41)
 
 
 ## Timing diagram 
-![Screenshot 2024-01-02 133231](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/d0783e50-4543-4529-bd24-84c6692458c4)
+HALF SUBRACTOR:
+![Screenshot 2024-01-03 063447](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/0ec0a908-59d3-40d9-b43e-a06dce6071c0)
+
+FULL SUBRACTOR:
+![Screenshot 2024-01-03 063525](https://github.com/GSanthosh007/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147527586/2c124887-9eb9-49ee-8f0c-97f4ea92d008)
 
 ## Result:!
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
